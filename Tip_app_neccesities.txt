@@ -1,0 +1,16 @@
+1)Note,I have added the dependency for icons: implementation "androidx.compose.material:material-icons-extended:$compose_ui_version"
+under the Gradle scripts.
+
+Path:
+ click on Gradle scripts on your left side (symbol of elephant)->open by clicking on build.gradle(note there are two build.gradle,you are advised to click on 
+ Module:Name_of_your_application.app).After adding there will be a sync option bar poping up.Just click on it and your dependency is added.
+
+2)I have also used
+  LocalSoftwareKeyboardController.current as one of my states.
+
+  val keyboardController=LocalSoftwareKeyboardController.current
+
+ if you use then a red line will show under LocalSoftwareKeyboardController .Don't panic just hover over the red line and it will ask you to import,click on import and its pretty much done.
+
+ it will show @OptIn(ExperimentalComposeUiApi::class) after import over your composable.This is because this class is still experimental in android development community.
+ 
